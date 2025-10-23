@@ -136,6 +136,11 @@ details[open] {
   flex-shrink: 0;
 }
 
+/* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+details[open]::details-content {
+  display: contents;
+}
+
 summary::after {
   margin-inline-start: var(--space);
 }
